@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shape{
+    clip-path: polygon(50% 0, 100% 0%, 100% 99%, 16% 100%);
+}
+
+.background{
+    background-color: #0d0620a0;
+}
+
+.hexagon{
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
