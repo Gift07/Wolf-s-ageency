@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="w-screen pb-5 pt-3 bg-black text-white">
       <div className="flex flex-col items-center justify-center">
-        <div className="w-screen px-12 flex pt-4 pb-8  justify-between">
+        <div className="w-screen px-5 lg:px-12 flex flex-col lg:grid lg:grid-cols-3 pt-4 pb-8  justify-between">
           <div>
             <h1 className="text-3xl font-semibold my-5">The wolf's agency</h1>
             <p className="text-gray-600 max-w-sm">
@@ -17,13 +17,13 @@ const Footer = () => {
             </p>
             <span>
               <h1 className="flex items-center gap-x-2 my-2">
-                <IoCallSharp color="blue" /> +255682804005
+                <IoCallSharp color="dodgerblue" /> +255682804005
               </h1>
               <h1 className="flex items-center gap-x-2 my-2">
-                <MdEmail color="blue" /> help@thewolfsagency.com
+                <MdEmail color="dodgerblue" /> help@thewolfsagency.com
               </h1>
               <h1 className="flex items-center gap-x-2 my-2">
-                <IoLocationSharp color="blue" />
+                <IoLocationSharp color="dodgerblue" />
                 Kigamboni, Dar Es Salaam,Tanzania
               </h1>
             </span>

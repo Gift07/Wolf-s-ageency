@@ -1,18 +1,24 @@
-import {useState} from 'react'
-import Image from "next/image"
+import { useState } from "react";
+import Image from "next/image";
 
-const WorkCard = ({Item}) => {
-    const [infoAvailable, setInfoAvailable] = useState(false)
+const WorkCard = ({ Item }) => {
+  const [infoAvailable, setInfoAvailable] = useState(false);
 
-    const handleMouse = () =>{
-        setInfoAvailable(!infoAvailable)
-    }
-    console.log(infoAvailable)
+  const handleMouse = () => {
+    setInfoAvailable(!infoAvailable);
+  };
+  console.log(infoAvailable);
   return (
-    <div className='w-80 h-80' onMouseOver={handleMouse}>
-        <Image src={Item.imageUrl} alt="image-one" width={320} height={320} objectFit="cover"/>
+    <div className="w-80 h-80 my-5" onMouseOver={handleMouse}>
+      <Image
+        src={Item.imageUrl}
+        alt="image-one"
+        width={320}
+        height={320}
+        objectFit="cover"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default WorkCard
+export default WorkCard;
